@@ -21,9 +21,9 @@ describe("AttributeValue", function() {
   //   console.log(util.unwrap1(singles_[i]));
 
   function bufferEqual(a, b){
-    return a.toString() === b.toString();
+    return a.toString('base64') === b.toString('base64');
   }
-  
+
   it("Sanity check - ensure mock objects are ok", function() {
     expect(_.isEqual(obj1, {})).toBe(false);
     expect(obj1).not.toBe(undefined);
