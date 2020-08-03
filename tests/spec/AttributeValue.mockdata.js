@@ -8,7 +8,7 @@ module.exports = {
     key2a: [1.1, 1.2, 1.3],
 
     key3: new String('String'),
-    key3a: [new String('String1'), 
+    key3a: [new String('String1'),
             new String('String2'),
             new String('String3')],
     key4: new Number(4.2),
@@ -30,7 +30,7 @@ module.exports = {
     mix : [0.1, 1, 'foo', null, true, false]
   },
 
-  obj1_: { 
+  obj1_: {
     key1: { S: 'str' },
     key1a: { SS: [ 'str1', 'str2', 'str3' ] },
     key2: { N: '1' },
@@ -59,7 +59,7 @@ module.exports = {
       }
     },
     mix: {
-      L: [ 
+      L: [
         { N: "0.1" },
         { N: "1" },
         { S: "foo" },
@@ -70,7 +70,7 @@ module.exports = {
     }
   },
 
-  obj2: { 
+  obj2: {
     key1: 'str',
     key1a: [ 'str1', 'str2', 'str3' ],
     key2: 1,
@@ -78,7 +78,7 @@ module.exports = {
     nothing1: null
   },
 
-  obj2_: { 
+  obj2_: {
     key1: { S: 'str' },
     key1a: { SS: [ 'str1', 'str2', 'str3' ] },
     key2: { N: '1' },
@@ -88,14 +88,14 @@ module.exports = {
   },
 
   obj3: {
-    bin: new Buffer('Hi')
+    bin: Buffer.from('Hi')
   },
 
   obj3_: {
-    bin: {B: new Buffer('Hi')}
+    bin: {B: Buffer.from('Hi')}
   },
 
-  objInvalid_: { 
+  objInvalid_: {
     key1: { ABCD: 'str' }
   },
 
